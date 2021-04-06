@@ -1,0 +1,137 @@
+main {
+    width: 100% !important;
+}
+
+#logo {
+    padding: 10px;
+    margin-left: 10px;
+    float: left;
+    border-radius: 15px;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+#navbar {
+    float: right;
+}
+
+#navbar ul li {
+    padding-right: 1em;
+}
+
+#predict {
+    color: #bae755 !important;
+    border-color: #bae755 !important;
+    width: fit-content;
+    height: min-content;
+}
+
+#predict:hover {
+    color: #fff !important;
+    font-weight: bold !important;
+}
+
+.search-container {
+    position: relative;
+    left: 250px;
+    padding-top: 5%;
+    margin-right: 0px !important;
+    width: 800px;
+    height: 44px;
+}
+
+#searchform {
+    background-color: rgba(212, 212, 212, 0.1);
+    height: 44px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+input {
+    all: unset;
+    font: 16px system-ui;
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    padding: 6px 10px;
+}
+
+::placeholder {
+    color: #fff;
+    font-weight: bold;
+    opacity: 0.9;
+}
+
+button {
+    all: unset;
+    cursor: pointer;
+    width: 88px;
+    height: 88px;
+}
+
+svg {
+    color: #fff;
+    fill: currentColor;
+    border: .5px solid white;
+    border-radius: 0px 5px 5px 0px;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    position: relative;
+    left: 18px;
+}
+
+#loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 120px;
+    height: 120px;
+    margin: -76px 0 0 -76px;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+  }
+  
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  /* Add animation to "page content" */
+  .animate-bottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
+  }
+  
+  @-webkit-keyframes animatebottom {
+    from { bottom:-100px; opacity:0 } 
+    to { bottom:0px; opacity:1 }
+  }
+  
+  @keyframes animatebottom { 
+    from{ bottom:-100px; opacity:0 } 
+    to{ bottom:0; opacity:1 }
+  }
+  
+  #analysischart {
+    display: none;
+    text-align: center;
+  }
